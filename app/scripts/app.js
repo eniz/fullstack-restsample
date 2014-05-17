@@ -24,6 +24,10 @@ angular.module('fullstackApp', [
         templateUrl: 'partials/topLists/disciplineTable',
         controller: 'DisciplineTableCtrl'
       })
+      .when('/squadTable', {
+        templateUrl: 'partials/team/squad',
+        controller: 'TeamSquadCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

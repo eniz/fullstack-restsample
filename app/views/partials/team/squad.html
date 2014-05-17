@@ -1,0 +1,23 @@
+
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Player</th>
+      <th>Position</th>
+      <th>Played Match</th>
+      <th> Played Mins</th>
+      <th> Goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='item in squadTable | orderBy:["Position.Id","Number"]'>
+      <td>{{item.Number}}</td>
+      <td>{{item.KnownName}}</td>
+      <td>{{item.Position.Name}}</td>
+      <td>{{item.LineUpCount}}</td>
+      <td>{{item.PlayedMinutes}}</td>
+      <td>{{item.Goals}}</td>
+    </tr>
+  </tbody>
+</table>
