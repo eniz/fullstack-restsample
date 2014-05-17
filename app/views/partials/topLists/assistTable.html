@@ -1,0 +1,18 @@
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Played Match</th>
+      <th> Assist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='item in assistTable'>
+      <td>{{item.PlayerName}}</td>
+      <td>{{item.TeamShortName}}</td>
+      <td>{{item.PlayedMatch}}</td>
+      <td>{{item.Count}}</td>
+    </tr>
+  </tbody>
+</table>

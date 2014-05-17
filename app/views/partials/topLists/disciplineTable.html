@@ -1,0 +1,22 @@
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Played Match</th>
+      <th> Y</th>
+      <th> R</th>
+      <th> Discipline Point</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='item in disciplineTable'>
+      <td>{{item.PlayerName}}</td>
+      <td>{{item.TeamShortName}}</td>
+      <td>{{item.PlayedMatch}}</td>
+      <td>{{item.YellowCard}}</td>
+      <td>{{item.RedCard}}</td>
+      <td>{{item.DisciplinePoint}}</td>
+    </tr>
+  </tbody>
+</table>
