@@ -12,6 +12,10 @@ angular.module('fullstackApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/team', {
+        templateUrl: 'partials/team/squad',
+        controller: 'TeamSquadCtrl'
+      })
       .when('/goalTable', {
         templateUrl: 'partials/topLists/goalTable',
         controller: 'GoalTableCtrl'

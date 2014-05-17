@@ -1,8 +1,13 @@
 <div class="header" ng-controller="NavbarCtrl">
   <ul class="nav nav-pills pull-right">
-    <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-        <a ng-href="{{item.link}}">{{item.title}}</a>
-    </li>
-  </ul>
-  <h3 class="text-muted">Statisticss</h3>
+        <li ng-repeat="menu in menus" ng-class="{dropdown: menu.menus}">
+          <a href="{{menu.action}}" ng-class="{'dropdown-toggle': menu.menus}" data-toggle="dropdown">{{menu.title}} <span ng-if="menu.menus" class="caret"></span></a>
+          <ul ng-if="menu.menus" class="dropdown-menu">
+            <li ng-repeat="submenu in menu.menus">
+              <a href="{{submenu.action}}">{{submenu.title}}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  <h3 class="text-muted">Statistics</h3>
 </div>
